@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Practice Areas - Advocate Indu Rani</title>
-  <meta name="description" content="Explore the legal practice areas of Advocate Indu Rani - Haridwar-based experienced lawyer for family, criminal, civil, property & consumer law.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About - Advocate Indu Rani</title>
+  <meta name="description" content="Learn more about Advocate Indu Rani, her expertise, experience, and commitment to justice.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="logo.png">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <meta name="keywords" content="Advocate Indu Rani, Haridwar Lawyer, Family Law Haridwar, Criminal Lawyer Haridwar, Legal Services India, Divorce Lawyer Haridwar">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="keywords" content="Advocate Indu Rani, Haridwar Lawyer, Family Law Haridwar, Criminal Lawyer Haridwar, Legal Services India, Divorce Lawyer Haridwar">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://advocateinduharidwar.in/practice.html" />
+  <link rel="canonical" href="https://advocateinduharidwar.in/why.html" />
   <link rel="icon" href="Favicon.png" type="image/png"> 
 <link rel="shortcut icon" href="Favicon.png" type="image/png">
 <meta property="og:title" content="Advocate Indu Rani - Haridwar" />
@@ -23,136 +23,93 @@
 
   <style>
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: 'Roboto', sans-serif; background: #f9f9f9; color: #333; scroll-behavior: smooth; }
+    body { margin:0; font-family:'Roboto',sans-serif; background:#f9f9f9; color:#333; scroll-behavior:smooth; }
 
+    /* Hero Banner */
     header.hero {
-      background: url('banner-practice.jpg') center/cover no-repeat;
-      height: 300px; color: #fff;
-      display: flex; flex-direction: column; justify-content: center; align-items: center;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.7); text-align: center; padding: 20px;
+      background: url('banner-about.jpg') center/cover no-repeat;
+      height: 300px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+      text-align: center;
+      padding: 20px;
     }
-    .hero h1 { font-size: 38px; }
-    .hero p { font-size: 16px; }
+    .hero h1 { font-size: 38px; animation: fadeInDown 1s ease-out; margin:0; }
+    .hero p { font-size: 18px; animation: fadeInUp 1s ease-out; margin-top:8px; }
 
+    /* Navigation */
     nav.navbar {
-      background: #f0c330; padding: 12px 20px; text-align: center; position: sticky; top: 0; z-index: 1000;
+      background: #f0c330;
+      padding: 12px 20px;
+      text-align: center;
+      position: sticky; top:0; z-index:1000;
     }
     nav.navbar a {
-      margin: 0 15px; color: #002f5f;
-      font-weight: bold; font-size: 16px; text-decoration: none;
+      margin: 0 15px; color:#002f5f; font-weight:bold;
+      text-decoration:none; font-size:16px;
     }
-    nav.navbar a:hover { text-decoration: underline; }
+    nav.navbar a:hover { text-decoration:underline; }
 
+    /* Container Styling */
     .container {
-      max-width: 1100px;
+      max-width: 1000px;
       margin: auto;
       padding: 60px 20px;
       animation: fadeInUp 1s ease-in;
     }
 
-    .section-title {
-      text-align: center;
-      color: #0b3d91;
-      font-size: 32px;
+    section {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      padding: 40px;
       margin-bottom: 40px;
     }
 
-    .practice-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-    }
-
-    .practice-card {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-      padding: 30px 20px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-      transition: 0.3s ease;
-    }
-
-    .practice-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 24px rgba(0,0,0,0.1);
-    }
-
-    .practice-card i {
-      font-size: 34px;
-      color: #f0c330;
-      margin-bottom: 12px;
-    }
-
-    .practice-card h3 {
+    section h2 {
       color: #0b3d91;
-      margin-bottom: 10px;
-      font-size: 20px;
+      font-size: 32px;
+      margin-bottom: 20px;
+      border-left: 6px solid #f0c330;
+      padding-left: 12px;
     }
 
-    .practice-card p.short-desc {
-      font-size: 15px;
-      color: #444;
-      margin-bottom: 12px;
+    section p {
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+    section ul {
+      padding-left: 20px;
+      list-style: disc;
+    }
+    section ul li {
+      margin-bottom:8px;
     }
 
-    .read-more-btn {
-      background: #0b3d91;
-      color: white;
-      border: none;
-      padding: 8px 16px;
-      font-size: 14px;
-      cursor: pointer;
-      border-radius: 6px;
-    }
-
-    .read-more-btn:hover {
-      background: #093278;
-    }
-
-    .more-info {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.4s ease, padding 0.3s ease;
-      padding: 0 10px;
-      text-align: left;
-      font-size: 14px;
-      color: #333;
-    }
-
-    .more-info.open {
-      padding: 10px;
-      max-height: 300px;
-      background: #f7faff;
-      margin-top: 12px;
-      border-left: 4px solid #0b3d91;
-      border-radius: 6px;
-    }
-
+    /* Footer */
     footer {
       background: #0b3d91;
       color: white;
       padding: 30px 20px;
       text-align: center;
       font-size: 14px;
-      margin-top: 60px;
+      animation: fadeIn 1s ease-in;
     }
-
     footer a {
       color: #f0c330;
       text-decoration: none;
       margin: 0 6px;
+      font-weight: bold;
     }
+    footer a.whatsapp { color: #25D366; }
 
-    footer a.whatsapp {
-      color: #25D366;
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px);}
-      to { opacity: 1; transform: translateY(0);}
-    }
+    @keyframes fadeInDown { from { opacity:0; transform:translateY(-20px);} to {opacity:1; transform:translateY(0);} }
+    @keyframes fadeInUp { from { opacity:0; transform:translateY(20px);} to {opacity:1; transform:translateY(0);} }
+    @keyframes fadeIn { from { opacity:0;} to {opacity:1;} }
   </style>
 </head>
 <body>
@@ -191,8 +148,6 @@
     ">
       Your Trusted Legal Mitra in District Court Haridwar.
     </p>
-
-  
   </div>
 </header>
 
@@ -210,98 +165,48 @@
 </div>
 
   <div class="container">
-    <h2 class="section-title">Our Practice Areas</h2>
-    <div class="practice-grid">
-      
-      <!-- Family Law -->
-      <div class="practice-card">
-        <i class="fas fa-user-friends"></i>
-        <h3>Family Law</h3>
-        <p class="short-desc">Divorce, custody, alimony, domestic violence, maintenance.</p>
-        <button class="read-more-btn">Read More</button>
-        <div class="more-info">
-          <p>With over 12 years of experience in family courts, Advocate Indu Rani has helped over 500 clients resolve sensitive family matters through both litigation and mediation. We focus on protecting the interests of children and ensuring your legal rights are upheld.</p>
-        </div>
-      </div>
+    <h1 style="text-align: center; color: #0b3d91; font-size: 36px; font-weight: 700; margin-bottom: 30px;">
+  About Advocate Indu Rani
+</h1>
 
-      <!-- Criminal Law -->
-      <div class="practice-card">
-        <i class="fas fa-balance-scale"></i>
-        <h3>Criminal Defense</h3>
-        <p class="short-desc">Bail, FIR quashing, IPC, NDPS, POCSO, appeals and defense.</p>
-        <button class="read-more-btn">Read More</button>
-        <div class="more-info">
-          <p>We provide aggressive defense in criminal cases including false FIRs, dowry harassment, and bail applications. With 300+ criminal hearings handled, our strategic approach has led to numerous acquittals and favorable bail orders.</p>
-        </div>
-      </div>
+    <section>
+      <h2>Our Mission & Values</h2>
+      <p><strong>Advocate Indu Rani</strong> is committed to delivering justice with empathy, expertise, and unwavering integrity. With two decades of practice in Family, Criminal, and Civil law, she strives to empower clients through clarity, personalized advocacy, and ethical conduct.</p>
+    </section>
 
-      <!-- Civil Litigation -->
-      <div class="practice-card">
-        <i class="fas fa-gavel"></i>
-        <h3>Civil Litigation</h3>
-        <p class="short-desc">Contract breach, recovery suits, property partitions, injunctions.</p>
-        <button class="read-more-btn">Read More</button>
-        <div class="more-info">
-          <p>Our civil practice includes dispute resolution through trial and pre-trial settlements. We ensure thorough documentation and persuasive argumentation. We have successfully represented over 250 civil litigants in Haridwar & Dehradun courts.</p>
-        </div>
-      </div>
+    <section>
+      <h2>Expertise & Experience</h2>
+      <ul>
+        <li>Bachelor's of Arts from UGC Approved University</li>
+         <li>Master's of Arts from UGC Approved  University</li>
+          <li>Bachelor's in Law (LL.B.) from UGC Approved  University</li>
+        <li>Over 15 years of experience in Customer dealing and Courtrrom in Haridwar District, Session Court and High Courts</li>
+        <li>Specialized in Criminal Defense, Family Law, Civil Litigation, Property & Revenue Cases</li>
+        <li>Regularly files petitions, appeals, revisions & writs in higher courts</li>
+        <li>Experienced mediator and drafter of wills, agreements, POAs, and legal notices</li>
+      </ul>
+    </section>
 
-      <!-- Property Law -->
-      <div class="practice-card">
-        <i class="fas fa-home"></i>
-        <h3>Property & Revenue Law</h3>
-        <p class="short-desc">Mutation, title disputes, lease, registry, land partition.</p>
-        <button class="read-more-btn">Read More</button>
-        <div class="more-info">
-          <p>Advocate Indu Rani specializes in title verification, succession, partition and demarcation issues in SDM & Tehsildar courts. We provide complete documentation support including registry, stamp duty and mutation services.</p>
-        </div>
-      </div>
+    <section>
+      <h2>Why Choose Advocate Rani?</h2>
+      <ul>
+        <li>Client-centered approach: Empowering clients with clear communication and respect</li>
+        <li>Proven advocacy: Personalized legal strategies that aim for efficient resolution</li>
+        <li>Transparent fees: Fair and written fee structure explained at consultation</li>
+        <li>Accessible: Available in-person at Haridwar courts and online for remote consultations</li>
+        <li>Community-driven: Active in legal aid and pro bono initiatives</li>
+      </ul>
+    </section>
 
-      <!-- Drafting -->
-      <div class="practice-card">
-        <i class="fas fa-file-signature"></i>
-        <h3>Legal Drafting</h3>
-        <p class="short-desc">Agreements, wills, POA, affidavits, gift deeds, sale deeds.</p>
-        <button class="read-more-btn">Read More</button>
-        <div class="more-info">
-          <p>All legal drafts are prepared with precision and legality. From family arrangements to business contracts, our documents ensure enforceability and clarity. We also assist with notary & registration procedures.</p>
-        </div>
-      </div>
-
-      <!-- Appeals -->
-      <div class="practice-card">
-        <i class="fas fa-university"></i>
-        <h3>Writs & Appeals</h3>
-        <p class="short-desc">High Court writs, criminal/civil revisions, second appeals.</p>
-        <button class="read-more-btn">Read More</button>
-        <div class="more-info">
-          <p>Advocate Indu Rani has filed several successful writ petitions under Article 226 and criminal revisions in the Uttarakhand High Court. Appeals are handled with deep legal research and client-focused strategies.</p>
-        </div>
-      </div>
-
-      <!-- Consumer -->
-      <div class="practice-card">
-        <i class="fas fa-shield-alt"></i>
-        <h3>Consumer & Medical Law</h3>
-        <p class="short-desc">Medical negligence, poor services, builder disputes.</p>
-        <button class="read-more-btn">Read More</button>
-        <div class="more-info">
-          <p>We represent clients in Consumer Forums for grievances related to housing, insurance, and hospitals. Our approach includes fast evidence compilation and out-of-court settlements wherever possible.</p>
-        </div>
-      </div>
-
-      <!-- Arbitration -->
-      <div class="practice-card">
-        <i class="fas fa-handshake"></i>
-        <h3>Mediation & Arbitration</h3>
-        <p class="short-desc">Private dispute resolution for civil, family, and business matters.</p>
-        <button class="read-more-btn">Read More</button>
-        <div class="more-info">
-          <p>We provide mediation support to reduce court time and cost. Over 60% of our clients have benefited from early resolution through arbitration or Lok Adalat proceedings.</p>
-        </div>
-      </div>
-
-    </div>
+    <section>
+      <h2>Credentials & Achievements</h2>
+      <ul>
+        <li>Member – Haridwar District Bar Association</li>
+        <li>Successfully handled over 350+ cases, including high-stake divorces, trials, and property suits</li>
+        <li>Recognized speaker at local legal seminars and workshops</li>
+        <li>Contributor to legal journals on family and property law topics</li>
+      </ul>
+    </section>
   </div>
 
   <section style="padding: 60px 20px; background: linear-gradient(135deg, #eef3fb, #dbe8fa);">
@@ -393,26 +298,7 @@
   <p style="text-align: center; margin-top: 40px; color: #ccc; font-size: 14px;"><strong>&copy; Disclaimer: </strong>This website is created and maintained by Advocate Indu Rani Gothwal, a practicing advocate in District & Session Court Haridwar. The term "Legal Mitra" is used purely in a personal and informal context, meaning a "Friend for Legal Guidance" and does not represent any registered firm, company, or trademark. All services offered are in an individual professional capacity..</p>
   
 </footer>
-
-
-  <script>
-    // Show only one "Read More" at a time
-    const buttons = document.querySelectorAll('.read-more-btn');
-    const infos = document.querySelectorAll('.more-info');
-
-    buttons.forEach((btn, index) => {
-      btn.addEventListener('click', () => {
-        infos.forEach((info, i) => {
-          if (i === index) {
-            info.classList.toggle('open');
-          } else {
-            info.classList.remove('open');
-          }
-        });
-      });
-    });
-  </script>
-  <!-- WhatsApp Floating Button with Icon and Text -->
+<!-- WhatsApp Floating Button with Icon and Text -->
 <a href="https://wa.me/919548650308" target="_blank" title="Chat with us on WhatsApp"
    style="position: fixed; bottom: 20px; right: 20px; background: linear-gradient(45deg, #25D366, #128C7E); color: white; padding: 12px 18px; border-radius: 30px; display: flex; align-items: center; font-size: 16px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.25); z-index: 1000;">
   <i class="fab fa-whatsapp" style="margin-right: 10px; font-size: 20px;"></i> WhatsApp
