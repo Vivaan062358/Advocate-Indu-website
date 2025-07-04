@@ -8,16 +8,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="logo.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <meta name="keywords" content="Advocate Indu Rani, Haridwar Lawyer, Family Law Haridwar, Criminal Lawyer Haridwar, Legal Services India, Divorce Lawyer Haridwar">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://advocateinduharidwar.in/blog.html" />
-  <link rel="icon" href="Favicon.png" type="image/png"> 
-  <link rel="shortcut icon" href="Favicon.png" type="image/png">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+
 <meta property="og:title" content="Advocate Indu Rani - Haridwar" />
 <meta property="og:description" content="Trusted legal help in criminal, family, and civil law." />
 <meta property="og:image" content="https://advocateinduharidwar.in/logo.png" />
-<meta property="og:url" content="https://advocateinduharidhar.in/index.html" />
+<meta property="og:url" content="https://advocateinduharidwar.in/index.html" />
 <meta name="twitter:card" content="summary_large_image" />
 
   <style>
@@ -25,7 +25,7 @@
     body { margin: 0; font-family: 'Roboto', sans-serif; background: #f9f9f9; color: #333; scroll-behavior: smooth; }
 
     header.hero {
-      background: url('banner-blog.jpg') center/cover no-repeat;
+      background: url('banner-blog.webp') center/cover no-repeat;
       height: 300px;
       color: #fff;
       display: flex;
@@ -239,7 +239,7 @@
     }
   }
 </style>
-  <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
@@ -267,6 +267,7 @@
   "dateModified": "2025-01-10"
 }
 </script>
+
 </head>
 <body>
 
@@ -274,7 +275,7 @@
 <header style="background: url('banner.png') center/cover no-repeat; padding: 60px 20px; text-align: center; position: relative;">
   <div style="max-width: 1000px; margin: auto;">
     <!-- Logo -->
-    <img src="logo.png" alt="Logo" style="
+    <img src="logo.webp" loading="lazy" alt="Logo" style="
       width: 200px;
       height: 200px;
       border-radius: 50%;
@@ -1065,5 +1066,32 @@
   <i class="fab fa-whatsapp" style="margin-right: 10px; font-size: 20px;"></i> WhatsApp
 </a>
 
+<!-- ✅ Combined JavaScript for FAQ & Blog Toggles -->
+<script>
+  // Accordion toggle (for FAQ)
+  document.querySelectorAll('.accordion').forEach(btn => {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('.accordion').forEach(other => {
+        if (other !== this) {
+          other.classList.remove('active');
+          other.nextElementSibling?.classList?.remove('open');
+        }
+      });
+      this.classList.toggle('active');
+      this.nextElementSibling?.classList?.toggle('open');
+    });
+  });
+
+  // Read More toggle (for Blogs)
+  document.querySelectorAll('.read-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const content = document.getElementById(btn.getAttribute('aria-controls'));
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !expanded);
+      content.hidden = expanded;
+      content.classList.toggle('open');
+    });
+  });
+</script>
 </body>
 </html>
