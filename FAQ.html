@@ -539,33 +539,5 @@
    style="position: fixed; bottom: 20px; right: 20px; background: linear-gradient(45deg, #25D366, #128C7E); color: white; padding: 12px 18px; border-radius: 30px; display: flex; align-items: center; font-size: 16px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.25); z-index: 1000;">
   <i class="fab fa-whatsapp" style="margin-right: 10px; font-size: 20px;"></i> WhatsApp
 </a>
-
-<!-- ✅ Combined JavaScript for FAQ & Blog Toggles -->
-<script>
-  // Accordion toggle (for FAQ)
-  document.querySelectorAll('.accordion').forEach(btn => {
-    btn.addEventListener('click', function () {
-      document.querySelectorAll('.accordion').forEach(other => {
-        if (other !== this) {
-          other.classList.remove('active');
-          other.nextElementSibling?.classList?.remove('open');
-        }
-      });
-      this.classList.toggle('active');
-      this.nextElementSibling?.classList?.toggle('open');
-    });
-  });
-
-  // Read More toggle (for Blogs)
-  document.querySelectorAll('.read-toggle').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const content = document.getElementById(btn.getAttribute('aria-controls'));
-      const expanded = btn.getAttribute('aria-expanded') === 'true';
-      btn.setAttribute('aria-expanded', !expanded);
-      content.hidden = expanded;
-      content.classList.toggle('open');
-    });
-  });
-</script>
 </body>
 </html>
